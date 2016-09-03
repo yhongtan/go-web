@@ -1,0 +1,12 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+      - "9000:9000"
+    volumes:
+      - .:/go-web/src/github.com/yhongtan/go-web/app/
+    networks:
+      default:
+        aliases:
+          - webgolang.local
