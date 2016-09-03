@@ -5,7 +5,7 @@ services:
     ports:
       - "9000:9000"
     volumes:
-      - .:/go-web/src/github.com/yhongtan/go-web/app/
+      - .:/go-web/src/github.com/yhongtan/go-web/
     networks:
       default:
         aliases:
